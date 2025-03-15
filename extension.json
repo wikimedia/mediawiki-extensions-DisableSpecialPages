@@ -1,0 +1,33 @@
+{
+	"name": "Disable Special Pages",
+	"version": "2.0",
+	"author": [
+		"Rob Church",
+		"Jack Phoenix"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:DisableSpecialPages",
+	"descriptionmsg": "disablespecialpages-desc",
+	"license-name": "GPL-2.0-or-later",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.39"
+	},
+	"MessagesDirs": {
+		"DisableSpecialPages": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"MediaWiki\\Extension\\DisableSpecialPages": "includes/DisableSpecialPages.php"
+	},
+	"Hooks": {
+		"SpecialPage_initList": "MediaWiki\\Extension\\DisableSpecialPages::onSpecialPage_initList"
+	},
+	"config": {
+		"DisabledSpecialPages": {
+			"description": "Titles of special pages to disable (prefer canonical names without the \"Special\" namespace part of the page name); Special:Userlogin, Special:Userlogout and Special:Search cannot be disabled via this interface.",
+			"value": []
+		}
+	},
+	"manifest_version": 2
+}
