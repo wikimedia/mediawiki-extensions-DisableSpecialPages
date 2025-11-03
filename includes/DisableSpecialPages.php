@@ -12,9 +12,9 @@
 namespace MediaWiki\Extension;
 
 use MediaWiki\MediaWikiServices;
-use Title;
 use SpecialPage;
 use MediaWiki\SpecialPage\SpecialPageFactory as SpecialPageFactory;
+use MediaWiki\Title\Title;
 
 class DisableSpecialPages {
 
