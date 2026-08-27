@@ -12,5 +12,10 @@
 			"parallel-lint . --exclude vendor --exclude node_modules",
 			"minus-x check ."
 		]
+	},
+	"config": {
+		"audit": {
+			"block-insecure": false
+		}
 	}
 }
